@@ -1,0 +1,20 @@
+workflows:
+  android-workflow:
+    name: Ruijie Pro - Android Build
+    max_build_duration: 60
+    environment:
+      java: 17
+    scripts:
+      - name: Set executable permission for gradlew
+        script: chmod +x gradlew
+      - name: Build Debug APK
+        script: ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
+    publishing:
+      email:
+        recipients:
+          - your@email.com
+        notify:
+          success: true
+          failure: true
