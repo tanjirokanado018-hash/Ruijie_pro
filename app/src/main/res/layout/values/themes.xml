@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.RuijiePro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cyan_primary</item>
+        <item name="colorPrimaryVariant">@color/cyan_dim</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/blue_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="editTextColor">@color/text_primary</item>
+        <item name="android:editTextColor">@color/text_primary</item>
+    </style>
+
+    <!-- Gradient Connect Button background layer (view behind the Button) -->
+    <style name="Widget.RuijiePro.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/cyan_primary</item>
+        <item name="android:textColor">@color/bg_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <!-- Outlined secondary button -->
+    <style name="Widget.RuijiePro.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="rippleColor">@color/cyan_glow</item>
+    </style>
+
+    <!-- CAPTCHA Dialog Theme -->
+    <style name="CaptchaDialogTheme" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/cyan_primary</item>
+        <item name="android:colorBackground">@color/bg_surface</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.RuijiePro.Button</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>
