@@ -7,14 +7,14 @@ workflows:
     scripts:
       - name: Set executable permission for gradlew
         script: chmod +x gradlew
-      - name: Build Debug APK
+      - name: Build Ruijie Pro APK
         script: ./gradlew assembleDebug
     artifacts:
-      - app/build/outputs/apk/debug/app-debug.apk
+      - app/build/outputs/apk/Ruijie-Pro.apk
     publishing:
       email:
         recipients:
-          - your@email.com
+          - mastergod152156@gmail.com
         notify:
           success: true
           failure: true
