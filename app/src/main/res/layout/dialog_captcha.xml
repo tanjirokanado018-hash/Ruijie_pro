@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_surface"
+    android:padding="0dp">
+
+    <!-- Dialog Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/card_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔐"
+            android:textSize="22sp"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAPTCHA Verification"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image ကို ကြည့်ပြီး Code ထည့်ပါ"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Thin cyan line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/card_stroke" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- CAPTCHA Image Frame -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/log_bg"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/imgCaptcha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:contentDescription="CAPTCHA Image" />
+
+            <!-- Loading hint -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Loading..."
+                android:textColor="@color/text_hint"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+        </FrameLayout>
+
+        <!-- Refresh button -->
+        <Button
+            android:id="@+id/btnRefreshCaptcha"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:text="🔄  Refresh"
+            android:textColor="@color/cyan_primary"
+            android:textSize="12sp"
+            android:backgroundTint="@color/bg_dark"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAPTCHA CODE"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:letterSpacing="0.12"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Input -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/card_bg"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etCaptchaCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:hint="Enter code here..."
+                android:textSize="18sp"
+                android:fontFamily="monospace"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:gravity="center"
+                android:letterSpacing="0.2" />
+        </FrameLayout>
+
+        <!-- Action buttons row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnCaptchaCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:backgroundTint="@color/card_bg"
+                android:layout_marginEnd="8dp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_button_gradient" />
+
+                <Button
+                    android:id="@+id/btnCaptchaVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="✓  Verify"
+                    android:textColor="@color/bg_dark"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:stateListAnimator="@null"
+                    android:elevation="0dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
