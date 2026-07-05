@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Deep dark backgrounds -->
+    <color name="bg_dark">#080C14</color>
+    <color name="bg_surface">#0E1420</color>
+    <color name="card_bg">#111827</color>
+    <color name="card_stroke">#1E2D3D</color>
+    <color name="divider">#1A2332</color>
+
+    <!-- Cyan / Teal accent -->
+    <color name="cyan_primary">#00E5FF</color>
+    <color name="cyan_dim">#0097A7</color>
+    <color name="cyan_glow">#1A00E5FF</color>
+
+    <!-- Electric blue accent -->
+    <color name="blue_accent">#2979FF</color>
+    <color name="blue_dim">#1565C0</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EAF0FB</color>
+    <color name="text_secondary">#6B7FA3</color>
+    <color name="text_hint">#3A4D6B</color>
+
+    <!-- Log terminal colors -->
+    <color name="log_bg">#050912</color>
+    <color name="log_text">#39D353</color>
+    <color name="log_text_dim">#1A7A2E</color>
+
+    <!-- Status -->
+    <color name="color_success">#00E676</color>
+    <color name="color_error">#FF5252</color>
+    <color name="color_warning">#FFD740</color>
+    <color name="color_info">#40C4FF</color>
+
+    <!-- Gradient colors for drawable use -->
+    <color name="grad_start">#00E5FF</color>
+    <color name="grad_end">#2979FF</color>
+
+    <!-- Material required -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

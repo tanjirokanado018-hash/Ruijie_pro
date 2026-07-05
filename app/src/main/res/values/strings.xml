@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ruijie Pro</string>
+    <string name="voucher_hint">Voucher Code ထည့်ပါ</string>
+    <string name="btn_connect">⚡ CONNECT</string>
+    <string name="btn_clear_gateway">Clear Saved Gateway</string>
+    <string name="captcha_title">CAPTCHA စစ်ဆေးမှု</string>
+    <string name="captcha_verify">Verify</string>
+    <string name="captcha_cancel">Cancel</string>
+    <string name="captcha_refresh">🔄 Refresh</string>
+    <string name="status_idle">⏳ Voucher Code ထည့်ပြီး Connect နှိပ်ပါ</string>
+    <string name="status_detecting">🔍 Gateway ရှာဖွေနေသည်…</string>
+    <string name="status_session">🔗 Session ID ရယူနေသည်…</string>
+    <string name="status_captcha">🔐 CAPTCHA စစ်ဆေးနေသည်…</string>
+    <string name="status_voucher">📤 Voucher ပေးပို့နေသည်…</string>
+    <string name="status_activate">🌐 Internet အသက်သွင်းနေသည်…</string>
+    <string name="status_success">✅ Internet ချိတ်ဆက်မှု အောင်မြင်ပါသည်!</string>
+</resources>
